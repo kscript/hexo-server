@@ -6,7 +6,7 @@
 title: 云端笔记
 subtitle: 杂七杂八的前端之旅
 description:
-keywords: 前端 js hexo 博客
+keywords: 前端,js,hexo,kscript,博客
 author: 路人
 language: zh-CN
 timezone:
@@ -42,7 +42,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: '  '
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
