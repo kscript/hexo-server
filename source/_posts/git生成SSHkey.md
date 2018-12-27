@@ -1,7 +1,12 @@
 ---
 title: git生成SSHkey
 date: 2018-12-21 14:21:03
-tags:
+source: 
+type:
+tags: 
+  - git
+  - sshkey
+  - 版本控制
 ---
 #### 1. 配置全局 name 和 email
 ```git

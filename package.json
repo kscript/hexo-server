@@ -4,7 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node src"
+    "start": "node src",
+    "update": "hexo g && node src"
   },
   "hexo": {
     "version": "3.8.0"
@@ -23,9 +24,10 @@
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-scss": "^1.2.0",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.1"
+    "hexo-server": "^0.3.1",
+    "hexo-word-cloud": "^1.0.2"
   },
   "devDependencies": {
-    "empty-line": "^1.0.2"
+    "ks-file-loader": "^1.0.8"
   }
 }

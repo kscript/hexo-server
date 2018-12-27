@@ -1,7 +1,9 @@
 ---
 title: hexo踩坑记录
 date: 2018-12-21 14:50:43
-tags:
+tags: 
+  - hexo
+  - 博客
 ---
 #### 开发文档
 [Hexo中文文档](https://hexo.io/zh-cn/docs/)
