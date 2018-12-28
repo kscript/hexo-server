@@ -13,9 +13,9 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kscript.gitee.io
+url: https://kscript.gitee.io
 root: /hexo/
-permalink: :year/:month/:day/:title/
+permalink: :year:month:day/:title.html
 permalink_defaults:
 
 # Directory
@@ -105,3 +105,27 @@ deploy:
   type: git
   repo: https://gitee.com/kscript/hexo.git
   branch: 'master'
+
+# 相对路径 基于项目根目录
+wordCloud:
+  # 输出文件路径 (默认: tag_dir/index.html)
+  output: 
+  title: 标签云
+  width: 1200
+  height: 600
+  # 使用 wordcloud 时 echarts 应当包含自定义系列
+  echarts: http://gallerybox.echartsjs.com/dep/echarts/3.8.0/echarts.min.js
+  wordcloud: http://data-visual.cn/datav/src/js/echarts/extension/echarts-wordcloud.min.js
+  # 标签云形状
+  image: themes/even/plugins/cloud/logo.png
+
+  # 可选模板 (格式: 相对于根目录的路径) 
+  # html 页面
+  template: 
+  # 标签云的展示逻辑/样式
+  script: 
+  style: themes/even/plugins/cloud/style.swig
+  # 标签云容器
+  element: themes/even/plugins/cloud/element.swig
+  # 标签云数据模板 (覆盖echarts.setOption时的 series.data)
+  tagdata: 

@@ -1,10 +1,10 @@
 ---
 title: 使用verdaccio搭建本地npm仓库
 date: 2018-12-26 18:23:10
-copyright: false
-author: luren
+copyright: true
+author: 
 home: 
-url: https://pc-8.cn
+url: 
 tags: 
   - npm
 ---
