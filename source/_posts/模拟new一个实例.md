@@ -4,6 +4,8 @@ date: 2018-12-26 09:49:16
 tags: 
   - js
   - 前端
+categories: js
+description: 模拟使用 new 实例化一个实例的过程
 ---
 #### 实现方法
 ```js

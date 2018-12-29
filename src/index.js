@@ -1,9 +1,9 @@
 // 调用示例
 
 const fs = require("fs");
-const empty = require('ks-file-loader');
+const fileLoader = require('ks-file-loader').default;
 
-empty({
+fileLoader({
   // 要进行转换的目录
   path: './public',
   // 文件扩展名, 支持正则
@@ -13,8 +13,10 @@ empty({
   // 排除目录
   exclude: /lib/,
   // 加载函数
+  deep: true,
+  readFile: true,
   loader: function(stats, data){
-    var content = data.replace(/\n(\s+)\n+/g, '');
+    var content = data.replace(/(\u0009|\n(\s+)\n+)/g, '');
     fs.writeFile(stats.path, content, function(error){
       if(error){
         console.log(error)

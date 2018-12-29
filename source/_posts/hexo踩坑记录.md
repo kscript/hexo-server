@@ -4,6 +4,8 @@ date: 2018-12-21 14:50:43
 tags: 
   - hexo
   - 博客
+categories: hexo
+description: 记录一下使用 hexo 搭建博客的步骤, 和搭建过程中收获的一些经验
 ---
 #### 开发文档
 [Hexo中文文档](https://hexo.io/zh-cn/docs/)

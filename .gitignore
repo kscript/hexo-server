@@ -79,3 +79,5 @@ typings/
 .serverless
 
 themes/
+
+*id_rsa*

@@ -7,6 +7,8 @@ tags:
   - git
   - sshkey
   - 版本控制
+categories: git
+description: 生成 SSH key 是 git 一个非常基础的知识点, 在使用 git 管理我们的代码仓库时, 配置好 SSH key, 可以避免每次提交代码时, 必须输入账号密码的这一步骤
 ---
 #### 1. 配置全局 name 和 email
 ```git

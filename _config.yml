@@ -114,8 +114,8 @@ wordCloud:
   width: 1200
   height: 600
   # 使用 wordcloud 时 echarts 应当包含自定义系列
-  echarts: http://gallerybox.echartsjs.com/dep/echarts/3.8.0/echarts.min.js
-  wordcloud: http://data-visual.cn/datav/src/js/echarts/extension/echarts-wordcloud.min.js
+  echarts: https://gallerybox.echartsjs.com/dep/echarts/3.8.0/echarts.min.js
+  wordcloud: 
   # 标签云形状
   image: themes/even/plugins/cloud/logo.png
 
