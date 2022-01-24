@@ -1,0 +1,24 @@
+diff --git a/node_modules/hexo-generator-searchdb/lib/database.js b/node_modules/hexo-generator-searchdb/lib/database.js
+index 9b29865..3d8ab17 100644
+--- a/node_modules/hexo-generator-searchdb/lib/database.js
++++ b/node_modules/hexo-generator-searchdb/lib/database.js
+@@ -10,6 +10,7 @@ function savedb(article, config, isPost) {
+   if (article.path) {
+     data.url = encodeURI(config.root + article.path);
+   }
++  data.description = article.description
+   if (config.search.content !== false) {
+     if (config.search.format === 'raw') {
+       data.content = article._content;
+diff --git a/node_modules/hexo-generator-searchdb/templates/search.xml b/node_modules/hexo-generator-searchdb/templates/search.xml
+index 6780f96..7ef26fe 100644
+--- a/node_modules/hexo-generator-searchdb/templates/search.xml
++++ b/node_modules/hexo-generator-searchdb/templates/search.xml
+@@ -4,6 +4,7 @@
+   <entry>
+     <title>{{ article.title }}</title>
+     <url>{{ article.url }}</url>
++    <description>{{ article.description }}</description>
+     <content><![CDATA[{{ article.content | safe }}]]></content>
+     {%- if article.categories %}
+       <categories>

@@ -32,6 +32,7 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
-    "ks-file-loader": "^1.0.8"
+    "ks-file-loader": "^1.0.8",
+    "patch-package": "^6.4.7"
   }
 }
